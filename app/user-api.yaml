@@ -30,7 +30,6 @@ spec:
       labels:
         app: user-api
     spec:
-      serviceAccountName: micro-services
       imagePullSecrets:
       - name: pipeline-docker-registry
       containers:

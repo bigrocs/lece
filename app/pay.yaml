@@ -32,7 +32,6 @@ spec:
       labels:
         app: pay
     spec:
-      serviceAccountName: micro-services
       imagePullSecrets:
       - name: pipeline-docker-registry
       containers:
