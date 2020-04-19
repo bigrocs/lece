@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: pay-api
-  namespace: api
+  namespace: xsj
 spec:
   selector:
     app: pay-api
@@ -17,7 +17,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pay-api
-  namespace: api
+  namespace: xsj
   labels:
     app: pay-api
 spec:
@@ -46,9 +46,9 @@ spec:
             - name: MICRO_REGISTRY
               value: "kubernetes"
             - name: USER_SERVICE
-              value: "user.srv:8080"
+              value: "user:8080"
             - name: PAY_SERVICE
-              value: "pay.srv:8080"
+              value: "pay:8080"
           ports:
           - containerPort: 8080
             name: http

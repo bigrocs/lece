@@ -28,7 +28,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: micro-services
-  namespace: api
+  namespace: xsj
 - kind: ServiceAccount
   name: micro-services
-  namespace: srv
+  namespace: xsj

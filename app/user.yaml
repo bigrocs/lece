@@ -4,7 +4,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: user
-  namespace: srv
+  namespace: xsj
 spec:
   selector:
     app: user
@@ -19,7 +19,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user
-  namespace: srv
+  namespace: xsj
   labels:
     app: user
 spec:

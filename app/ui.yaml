@@ -3,7 +3,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: micro-rpc
-  namespace: api
+  namespace: xsj
 spec:
   rules:
   - host: xip.io
@@ -17,7 +17,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ui
-  namespace: api
+  namespace: xsj
 spec:
   rules:
   - host: xip.io

@@ -4,7 +4,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: pay
-  namespace: srv
+  namespace: xsj
 spec:
   selector:
     app: pay
@@ -19,7 +19,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pay
-  namespace: srv
+  namespace: xsj
   labels:
     app: pay
 spec:

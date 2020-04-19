@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: user-api
-  namespace: api
+  namespace: xsj
 spec:
   selector:
     app: user-api
@@ -17,7 +17,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user-api
-  namespace: api
+  namespace: xsj
   labels:
     app: user-api
 spec:
@@ -46,9 +46,9 @@ spec:
             - name: MICRO_REGISTRY
               value: "kubernetes"
             - name: USER_SERVICE
-              value: "user.srv:8080"
+              value: "user:8080"
             - name: REDIS_HOST
-              value: "redis-master.api"
+              value: "redis-master"
             - name: REDIS_PASSWORD
               valueFrom:
                 secretKeyRef:
