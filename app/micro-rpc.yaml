@@ -32,7 +32,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: micro-rpc
-  namespace: api
+  namespace: xsj
   labels:
     app: micro-rpc
 spec:
