@@ -59,6 +59,7 @@ spec:
       labels:
         app: ui
     spec:
+      serviceAccountName: micro-services
       imagePullSecrets:
       - name: pipeline-docker-registry
       containers:

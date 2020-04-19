@@ -29,6 +29,3 @@ subjects:
 - kind: ServiceAccount
   name: micro-services
   namespace: xsj
-- kind: ServiceAccount
-  name: micro-services
-  namespace: xsj
